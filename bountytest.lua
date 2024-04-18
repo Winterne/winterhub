@@ -630,7 +630,7 @@ function findvalidlistplayer()
     for i, v in pairs(game.Players:GetPlayers()) do
         if v and v.Team and v.Character and v.Character:FindFirstChild("Head") and string.find(string.lower(tostring(v.Team)), "es") 
             and (tostring(lp.Team) == "Pirates" or tostring(v.Team) == "Pirates") and lp.Data.Level.Value - v.Data.Level.Value < 300 and CalcDistance(GetBypassPos(v.Character.HumanoidRootPart.CFrame), v.Character.HumanoidRootPart.CFrame) < 3500
-            and not ({["Portal-Portal"] = true, ["Leopard-Leopard"] = true, ["Buddha-Buddha"] = true, ["Kitsune-Kitsune"] = true})[tostring(v.Data.DevilFruit.Value)]
+            and not ({["Portal-Portal"] = true, ["Leopard-Leopard"] = true, ["Magma-Magma"] = true, ["Buddha-Buddha"] = true, ["Kitsune-Kitsune"] = true})[tostring(v.Data.DevilFruit.Value)]
             and not table.find(usedEnemy, v) and not table.find(validplayerlist, v)
             and ((getgenv().Setting["Skip Race V4"] and not (v.Backpack:FindFirstChild("Awakening") or v.Character:FindFirstChild("Awakening"))) or not getgenv().Setting["Skip Race V4"]) then 
             table.insert(validplayerlist, v)
