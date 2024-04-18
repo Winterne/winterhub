@@ -142,6 +142,7 @@ getgenv().Setting = {
     ["Chat"] = {},
     ["Skip Race V4"] = true,
     ["Misc"] = {
+        ["Click Delay"] = 0.35,
         ["Enable Lock Bounty"] = false,
         ["Lock Bounty"] = {0, 300000000},
         ["Hide Health"] = {4500,5000},
@@ -149,8 +150,8 @@ getgenv().Setting = {
         ["Enable Cam Farm"] = false,
         ["White Screen"] = false, 
         ["FPS Boost"] = false,
-        ["Bypass TP"] = true, 
-        ["Random & Store Fruit"] = true
+        ["Bypass TP"] = false, 
+        ["Random & Store Fruit"] = false,
     },
     ["Item"] = {
         ["Melee"] = {["Enable"] = true,
@@ -751,7 +752,7 @@ MainFrame.Parent = MainGui
 UICorner.CornerRadius = UDim.new(0, 5)
 UICorner.Parent = MainFrame
 
-Background.Image = "rbxassetid://17177538821"
+Background.Image = "rbxassetid://17186709406"
 Background.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Background.BackgroundTransparency = 0.9990000128746033
 Background.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -800,7 +801,7 @@ TextLabel1.Position = UDim2.new(0, 5, 0, 0)
 TextLabel1.Size = UDim2.new(1, 0, 1, 0)
 TextLabel1.Parent = TextLabel
 
-CharacterIcon.Image = "rbxassetid://17179308363"
+CharacterIcon.Image = "rbxassetid://"
 CharacterIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CharacterIcon.BackgroundTransparency = 0.9990000128746033
 CharacterIcon.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -825,7 +826,7 @@ BountyEarned.Size = UDim2.new(0, 336, 0, 27)
 BountyEarned.Name = "BountyEarned"
 BountyEarned.Parent = MainFrame
 
-UIStroke.Color = Color3.fromRGB(47.0000009983778, 255, 0)
+UIStroke.Color = Color3.fromRGB(47.000000998377155, 88, 209)
 UIStroke.Thickness = 0.4000000059604645
 UIStroke.Parent = BountyEarned
 
@@ -844,12 +845,12 @@ TotalBountyEarned.Size = UDim2.new(0, 336, 0, 27)
 TotalBountyEarned.Name = "TotalBountyEarned"
 TotalBountyEarned.Parent = MainFrame
 
-UIStroke1.Color = Color3.fromRGB(47.0000009983778, 255, 0)
+UIStroke1.Color = Color3.fromRGB(47.000000998377155, 88, 209)
 UIStroke1.Thickness = 0.4000000059604645
 UIStroke1.Parent = TotalBountyEarned
 
 CilentTimeElapsed.Font = Enum.Font.Bodoni
-CilentTimeElapsed.Text = "Cilent Time Elapsed: 0h:0m:0s"
+CilentTimeElapsed.Text = "Combo Melee + Sword + Gun"
 CilentTimeElapsed.TextColor3 = Color3.fromRGB(255, 255, 255)
 CilentTimeElapsed.TextSize = 25
 CilentTimeElapsed.TextTransparency = 0.10000000149011612
@@ -863,12 +864,12 @@ CilentTimeElapsed.Size = UDim2.new(0, 336, 0, 27)
 CilentTimeElapsed.Name = "CilentTimeElapsed"
 CilentTimeElapsed.Parent = MainFrame
 
-UIStroke2.Color = Color3.fromRGB(47.0000009983778, 255, 0)
+UIStroke2.Color = Color3.fromRGB(47.000000998377155, 88, 209)
 UIStroke2.Thickness = 0.4000000059604645
 UIStroke2.Parent = CilentTimeElapsed
 
 AccoutTimeElapsed.Font = Enum.Font.Bodoni
-AccoutTimeElapsed.Text = "Account Time Elapsed: 0h:0m:0s"
+AccoutTimeElapsed.Text = "WIBU Là Chính HeHe"
 AccoutTimeElapsed.TextColor3 = Color3.fromRGB(255, 255, 255)
 AccoutTimeElapsed.TextSize = 25
 AccoutTimeElapsed.TextTransparency = 0.10000000149011612
@@ -882,7 +883,7 @@ AccoutTimeElapsed.Size = UDim2.new(0, 336, 0, 27)
 AccoutTimeElapsed.Name = "AccoutTimeElapsed"
 AccoutTimeElapsed.Parent = MainFrame
 
-UIStroke3.Color = Color3.fromRGB(47.0000009983778, 255, 0)
+UIStroke3.Color = Color3.fromRGB(47.000000998377155, 88, 209)
 UIStroke3.Thickness = 0.4000000059604645
 UIStroke3.Parent = AccoutTimeElapsed
 
@@ -903,7 +904,7 @@ SkipButton.Font = Enum.Font.Bodoni
 SkipButton.Text = "Skip"
 SkipButton.TextColor3 = Color3.fromRGB(239.00000095367432, 255, 221.00000202655792)
 SkipButton.TextSize = 30
-SkipButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SkipButton.BackgroundColor3 = Color3.fromRGB(154, 64, 222)
 SkipButton.BackgroundTransparency = 0.9990000128746033
 SkipButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SkipButton.BorderSizePixel = 0
@@ -926,7 +927,7 @@ CrentBounty.Size = UDim2.new(0, 336, 0, 27)
 CrentBounty.Name = "CrentBounty"
 CrentBounty.Parent = MainFrame
 
-UIStroke4.Color = Color3.fromRGB(47.0000009983778, 255, 0)
+UIStroke4.Color = Color3.fromRGB(47.000000998377155, 88, 209)
 UIStroke4.Thickness = 0.4000000059604645
 UIStroke4.Parent = CrentBounty
 --// Edit Gui
